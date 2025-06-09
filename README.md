@@ -22,7 +22,7 @@ To showcase how an orchestration tool like **Apache Airflow** can be combined wi
 ---
 
 ## Project Structure (2 levels map)
-
+```bash
 ├── airflow
 │   ├── dags
 │   ├── data
@@ -43,6 +43,7 @@ To showcase how an orchestration tool like **Apache Airflow** can be combined wi
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+```
 
 ## Data Source
 
@@ -91,10 +92,7 @@ docker compose up -d
 docker compose ps
 ```
 
-6. **Access Airflow UI**
-Visit http://localhost:8080
-
-7. **Create Admin User**
+6. **Create Admin User**
 ```bash
 docker exec -it van-building-permits-pipeline-webserver-1 bash
 
@@ -106,6 +104,9 @@ airflow users create \
   --role Admin \
   --email admin@example.org
 ```
+
+7. **Access Airflow UI**
+Visit http://localhost:8080
 
 8. **Set Required Variables**
 Via Airflow UI (Admin → Variables):
