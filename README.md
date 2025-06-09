@@ -71,7 +71,7 @@ git clone https://github.com/yourusername/van-building-permits-pipeline.git
 cd van-building-permits-pipeline
 ```
 
-2. **Create required folders** (If the project is cloned, it would have the three folders.)
+2. **Create required folders** (If the project is cloned, it would include all required folders.)
 ```bash
 mkdir -p airflow/{dags,logs,plugins}
 ```
