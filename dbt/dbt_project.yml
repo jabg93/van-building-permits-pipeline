@@ -1,0 +1,16 @@
+name: pipeline_project
+version: "1.0"
+profile: pipeline_profile
+
+model-paths: ["models"]
+target-path: "target"
+
+vars:
+  surrogate_key_treat_nulls_as_empty_strings: True
+
+models:
+  pipeline_project:
+    silver:
+      +schema: silver
+    gold:
+      +schema: gold

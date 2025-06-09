@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs y temp files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Systen files
+.DS_Store
+Thumbs.db
+
+# Venv
+venv/
+.venv/
+.env/
+
+
+# Docker
+**/.mypy_cache/
+**/__pycache__/
+**/.pytest_cache/
+**/.coverage
+**/.tox
+docker-compose.override.yml
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/unittests.cfg
+airflow/.airflowenv
+airflow/__pycache__/
+airflow/tmp/
+
+# DBT
+dbt/target/
+dbt/dbt_packages/
+dbt/__pycache__/
+dbt/.dbt/
+
+# Data files
+*.csv
+*.xlsx
+*.parquet
+*.json
+*.zip
+*.gz
+airflow/data/
+
+# VSCode / IDEs 
+.vscode/
+.idea/
+*.code-workspace

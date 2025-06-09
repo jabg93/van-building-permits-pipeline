@@ -1,0 +1,6 @@
+sources:
+  - name: bronze
+    database: airflow
+    schema: bronze
+    tables:
+      - name: building_permits
